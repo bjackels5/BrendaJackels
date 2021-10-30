@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# ProjectName
+This challenge for Module 20 of the Coding Bootcamp is to create a professional portfolio for myself using React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* [User Story](#userStory)
 
-## Available Scripts
+* [Requirements](#requirements)
 
-In the project directory, you can run:
+* [Technologies Used](#techUsed)
 
-### `npm start`
+* [What I Learned](#whatILearned)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [ProjectName Screenshot](#webImage)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* [Sample Generated Webpage](#sampleOutput)
 
-### `npm test`
+* [ProjectName Demo](#projectDemo)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [ProjectName URL](#projectURL)
 
-### `npm run build`
+* [Contact Me](#contactMe)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a id="userStory"></a>
 
-### `npm run eject`
+## User Story
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+AS AN employer looking for candidates with experience building single-page applications
+I WANT to view a potential employee's deployed React portfolio of work samples
+SO THAT I can assess whether they're a good candidate for an open position
+--- 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a id="requirements"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Requirements
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* The portfolio must be a single-page application.
+* When the portfolio is loaded, the user is presented with a page containing a header, a section for content, and a footer.
+* The header contains:
+    * the developer's name
+    * navigation containing the following titles:
+        * About Me
+        * Portfolio
+        * Contact
+        * Resume
+        * the title corresponding to the current section is highlighted
+* Clicking on a navigation title presents the corresponding section below the navigation. This will not result in any page reloading.
+* The *About Me* title and section are selected by default.
+* The *About Me* section contains a recent photo and a short bio.
+* The *Portfolio* section contains 6 of my applications, each with:
+    * a link to the deployed application
+    * a link to the corresponding GitHub repository
+* The *Contact* section requires:
+    * a contact form with fields:
+        * name
+        * email address
+        * message
+    * All fields are required, and a notification will appear to that affect when the cursor is moved out of an empty field
+    * Text entered into the email address field is verified to be a valid email address, and the user is notified if it is not valid.
+* The *Resume* section contains:
+    * a link to a downloadable resume
+    * a list of my proficiencies
+* The footer contains:
+    * A links to my GitHub profile
+    * A link to my LinkedIn profile
+    * A link to a third platform (I'll use Stack Overflow)
+* Use a Create-React-App that contains:
+    * A single Header component that appears on multiple pages
+    * A single Navigation component within the header that will be used to conditionally render the different sections of your portfolio
+    * A single Project component that will be used multiple times in the Portfolio section
+    * A single Footer component that appears on multiple pages
+* FOR NOW, The contact form should be similar to the one built in the module project. Because this application doesn’t include a back end or connect to an API, set up this functionality the same way it is in the module project and add in back-end functionality later. In the meantime, add my email address and phone number on the Contact page.
+    
+---
 
-## Learn More
+<a id="techUsed"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* React
+--- 
 
-### Code Splitting
+<a id="whatILearned"></a>
+## What I Learned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I learned that the instructions in the Module to disable automatic browser opening for the CRA CLI are incorrect. The correct way to suppress the browser is to add "BROWSER=none" to the .env file. There are other methods that involved more steps.
 
-### Analyzing the Bundle Size
+Build a single-page application with React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Create reusable components within a React application.
 
-### Making a Progressive Web App
+Manage state within React components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Pass props to child components.
 
-### Advanced Configuration
+Use React Hooks to manage state in functional components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Conditionally render components based on updates to state.
 
-### Deployment
+Compose a React application with components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Learn how React components are basically just functions.
 
-### `npm run build` fails to minify
+Construct the elements of a webpage using JSX.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Debug errors in React.
+
+
+---
+
+<a id="webImage"></a>
+
+## ProjectName Screenshot
+
+![ProjectName](./media/project-name.png)
+
+---
+
+<a id="sampleOutput"></a>
+
+<a href="./dist/sampleOutputFile">Sample ProjectName Output</a>
+
+---
+
+## ProjectName Demo
+
+<a id="projectDemo"></a>
+
+<a href="https://youtu.be/TRyEJ-cYpcg">
+   <img src="./media/ProjectName-demo.png">
+</a>
+
+---
+
+<a id="projectURL"></a>
+## ProjectName URL
+[ProjectName URL](https://bjackels5.github.io/ProjectName/)
+
+---
+
+---
+
+<a id="contactMe"></a>
+## Contact Me
+You can reach me, Brenda Jackels, at bjackels5@gmail.com.
+
