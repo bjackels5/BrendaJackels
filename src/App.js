@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import About from './components/About';
 import Nav from './components/Nav';
-// import ContactForm from './components/Contact';
+import ContactForm from './components/Contact';
 
 function App() {
     const menuIds = {
@@ -43,7 +43,7 @@ function App() {
                 ) : (currentSelection.id === menuIds.PORTFOLIO) ? (
                     "<Portfolio></Portfolio>"
                 ) : (currentSelection.id === menuIds.CONTACT) ? (
-                    "<ContactForm></ContactForm>"
+                    <ContactForm></ContactForm>
                 ) : (currentSelection.id === menuIds.RESUME) ? (
                     "<Resume></Resume>"
                 ) : "oops"}
