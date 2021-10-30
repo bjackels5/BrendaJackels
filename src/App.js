@@ -1,25 +1,31 @@
 import React, { useState } from 'react';
-// import About from './components/About';
+import About from './components/About';
 import Nav from './components/Nav';
 // import ContactForm from './components/Contact';
 
 function App() {
+    const menuIds = {
+        ABOUTME: 0,
+        PORTFOLIO: 1,
+        CONTACT: 2,
+        RESUME: 3,
+    }
     const [menuSelections] = useState([
         {
             name: "About Me",
-            id: 0
+            id: menuIds.ABOUTME
         },
         {
             name: "Portfolio",
-            id: 1
+            id: menuIds.PORTFOLIO
         },
         {
             name: "Contact",
-            id: 2
+            id: menuIds.CONTACT
         },
         {
             name: "Resume",
-            id: 3
+            id: menuIds.RESUME
         }
     ]);
     const [currentSelection, setCurrentSelection] = useState(menuSelections[0]);
@@ -32,18 +38,15 @@ function App() {
                 currentSelection={currentSelection}
             ></Nav>
             <main>
-                {/* {!contactSelected ? (
-                    <>
-                        <Gallery
-                            categories={categories}
-                            setCurrentCategory={setCurrentCategory}
-                            currentCategory={currentCategory}
-                        ></Gallery>
-                        <About></About>
-                    </>
-                ) : (
-                    <ContactForm></ContactForm>
-                )} */}
+                {(currentSelection.id === menuIds.ABOUTME) ? (
+                    <About></About>
+                ) : (currentSelection.id === menuIds.PORTFOLIO) ? (
+                    "<Portfolio></Portfolio>"
+                ) : (currentSelection.id === menuIds.CONTACT) ? (
+                    "<ContactForm></ContactForm>"
+                ) : (currentSelection.id === menuIds.RESUME) ? (
+                    "<Resume></Resume>"
+                ) : "oops"}
             </main>
         </div>
     );
