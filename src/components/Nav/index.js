@@ -12,7 +12,7 @@ function Nav(props) {
     } = props;
 
     return (
-        <nav className="navbar navbar-expand ml-4">
+        <nav className="navbar navbar-expand ml-4 bg-custom-nav fixed-top">
             <a className="navbar-brand corben mt-0 pt-0" href="/">Brenda Jackels</a>
                 <div className="navbar-nav">
                     {menuSelections.map((menuSelection) => (

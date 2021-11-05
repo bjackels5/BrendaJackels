@@ -44,9 +44,14 @@ html, body {
 }
 
 body {
-    background: var(--the-bkgnd-color);
+    /* background: var(--the-bkgnd-color); */
     color: var(--text-color);
     font-family: 'Bitter-Regular, sans-serif';
+    background-image: url('./assets/images/greybrickbackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom left;
+    background-size: cover;
 }
 
 a {
@@ -65,10 +70,10 @@ li {
 }
 
 .navbar {
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
-.navbar li:hover, .navbar-brand:hover, .resume-link:hover, .copyright-link:hover {
+.navbar li:hover, .navbar-brand:hover, .resume-link:hover, .copyright-link:hover, .btn-custom:hover {
     color: var(--hover-color);
 }
 
@@ -126,6 +131,42 @@ textarea {
     color: white;
 }
 
-#contact-form button {
-    background-color: var(--submit-button-color);
+.container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
 }
+
+#contact-form {
+    /* opacity: 60%; */
+    width: 60%;
+    min-width: 360px;
+}
+
+.form-control {
+    opacity: 60%;
+    font-weight: 900;
+}
+
+.form-label {
+    font-weight: 900;
+}
+.btn-custom {
+    background-color: var(--submit-button-color);
+    color: white;
+    opacity: 100%;
+    font-weight: 900;
+}
+
+.bg-custom-nav {
+    background-image: linear-gradient(to right, rgba(33,37,41, 1), rgba(33,37,41,0));
+}
+
+.bg-custom-foot {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(33,37,41,0), rgba(33,37,41, 1), rgba(33,37,41,0));
+    /* background-image: radial-gradient(rgba(33,37,41, 1) 30%, rgba(33,37,41,0)); */
+}
+

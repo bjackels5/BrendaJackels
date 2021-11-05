@@ -71,7 +71,7 @@ function ContactForm() {
 
                 {/* <!-- Form submit button --> */}
                 <div class="d-grid">
-                    <button class="btn btn-lg" type="submit">Submit</button>
+                    <button className="btn btn-large btn-custom" type="submit">Submit</button>
                 </div>
             </form>
         </section>

@@ -1,6 +1,9 @@
 # ProjectName
 This challenge for Module 20 of the Coding Bootcamp is to create a professional portfolio for myself using React.
 
+grey brick background
+https://www.wallpaperflare.com/wall-of-rocks-grey-brick-wall-artistic-urban-wall-building-feature-wallpaper-poyok
+
 * [User Story](#userStory)
 
 * [Requirements](#requirements)
