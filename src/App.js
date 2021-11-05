@@ -3,6 +3,7 @@ import About from './components/About';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 function App() {
     const menuIds = {
@@ -49,6 +50,7 @@ function App() {
                     "<Resume></Resume>"
                 ) : "oops"}
             </main>
+            <Footer></Footer>
         </div>
     );
 }
