@@ -297,7 +297,7 @@ a {
 .card-text {
     font-size: .75rem;
     padding-bottom: 0;
-    margin-bottom:0 ;
+    margin-bottom:10px ;
 }
 
 .btn-app {
@@ -306,11 +306,31 @@ a {
     margin: 5px;
 }
 
-.project:hover {
+.float-right {
+    /* float:right; */
+}
+
+
+.proj-link {
     border: 1px solid white;
+    border-radius: 50%;
+    /* margin-left: 5px; */
+    margin-right: 10px;
+    margin-top: 50px;   
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.proj-link:hover {
+    border: 2px solid magenta;
+    /* height: 2em; */
+    /* padding: 8px; */
+    /* border: 1px solid white; */
+}
+
+.project:hover {
+    /* border: 1px solid white; */
     padding: 2px;
 }
 
-a .proj-link, .fa-github, .fa {
-    color: magenta;
-}
