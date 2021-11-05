@@ -135,7 +135,7 @@ Debug errors in React.
 
 <a id="projectURL"></a>
 ## ProjectName URL
-[ProjectName URL](https://bjackels5.github.io/ProjectName/)
+[ProjectName URL](https://bjackels5.github.io/bjackels5-portfolio/)
 
 ---
 

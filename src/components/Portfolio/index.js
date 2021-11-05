@@ -63,16 +63,4 @@ function Portfolio({ currentCategory }) {
     )
 }
 
-/* orig code */
-
-// return (
-//     <section>
-//         <h1 data-testid="h1tag">My Portfolio</h1>
-//         {projects.map((project) => (
-//             <Project project={project}></Project>
-//         ))}
-//     </section>
-// )
-
-
 export default Portfolio;

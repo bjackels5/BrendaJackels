@@ -5,6 +5,8 @@ main {
 }
 
 :root {
+    --hover-color: magenta;
+    --active-color: cornflowerblue;
     --primary: #8c54ff;
     --secondary: #F3A847;
     --tertiary: #B12704;
@@ -79,10 +81,6 @@ a {
     font-weight: bold;
 }
 
-/* a:hover {
-    text-decoration: underline;
-} */
-
 a:visited {
     color: inherit; /* don't allow the visited links to change color */
 }
@@ -146,8 +144,9 @@ li {
     list-style: none;
 }
 
-nav a:hover {
+nav a:hover, nav li:hover {
     text-decoration: none;
+    color: var(--hover-color);
 }
 
 nav li {
@@ -180,63 +179,6 @@ textarea {
 .flex-end {
     justify-content: flex-end;
 }
-
-/* .mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
-}
-
-.mx-2 {
-  margin-right: var(--spacing-two);
-  margin-left: var(--spacing-two);
-}
-
-.my-1 {
-  margin-top: var(--spacing-one);
-  margin-bottom: var(--spacing-one);
-}
-
-.my-2 {
-  margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two);
-}
-
-.my-5 {
-  margin-top: var(--spacing-five);
-  margin-bottom: var(--spacing-five);
-}
-
-.px-1 {
-  padding-right: var(--spacing-one);
-  padding-left: var(--spacing-one);
-}
-
-.px-2 {
-  padding-right: var(--spacing-two);
-  padding-left: var(--spacing-two);
-}
-
-.py-1 {
-  padding-top: var(--spacing-one);
-  padding-bottom: var(--spacing-one);
-}
-
-.py-2 {
-  padding-top: var(--spacing-two);
-  padding-bottom: var(--spacing-two);
-}
-
-.card {
-  width: 25%;
-  text-align: center;
-}
-
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
-} */
 
 .modalBackdrop {
     background: rgba(0, 0, 0, .65);
@@ -286,7 +228,7 @@ a {
 }
 
 .navActive {
-    color: var(--secondary);
+    color: var(--active-color);
 }
 
 .btn-bjj { /* just some values to test with */
@@ -314,7 +256,6 @@ a {
 .proj-link {
     border: 1px solid white;
     border-radius: 50%;
-    /* margin-left: 5px; */
     margin-right: 10px;
     margin-top: 50px;   
     padding-bottom: 4px;
@@ -323,10 +264,7 @@ a {
 }
 
 .proj-link:hover {
-    border: 2px solid magenta;
-    /* height: 2em; */
-    /* padding: 8px; */
-    /* border: 1px solid white; */
+    border: 2px solid var(--hover-color);
 }
 
 .project:hover {
@@ -334,3 +272,28 @@ a {
     padding: 2px;
 }
 
+.footer-link {
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 50px;   
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.footer-link:hover {
+    border: 2px solid var(--hover-color);
+}
+
+.copyright-link {
+    /* font-size: 3em; */
+}
+
+.copyright-link:hover {
+    color: var(--hover-color);
+}
+
+.copyright-info {
+    font-size: .75em;
+}
