@@ -7,17 +7,35 @@ main {
 :root {
     --hover-color: magenta;
     --active-color: cornflowerblue;
-    
     --light: #fafafa;
     --dark: #000000;
 }
 
 /* seems like I might want this back? Just in case, I'll keep it until I'm done with all styling. If 
    it's still commented out when I'm done, I'll delete it then. */
+
 /*
 * {
     box-sizing: border-box;
 } */
+
+@font-face {
+    font-family: "Corben-Regular, sans-serif";
+    src: local("Corben-Regular, sans-serif"), url("./assets/fonts/Corben/Corben-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bitter-Regular, serif";
+    src: local("Bitter-Regular, sans-serif"), url("./assets/fonts/Bitter/static/Bitter-Regular.ttf") format("truetype");
+}
+
+.corben {
+    font-family: 'Corben-Regular, sans-serif';
+}
+
+.bitter {
+    font-family: 'Bitter-Regular, sans-serif';
+}
 
 html, body {
     min-height: 100%;
@@ -26,18 +44,22 @@ html, body {
 body {
     background: var(--dark);
     color: var(--light);
+    font-family: 'Bitter-Regular, sans-serif';
 }
 
 a {
-    text-decoration: none; /* no underlines for links */
+    text-decoration: none;
+    /* no underlines for links */
 }
 
 a:visited {
-    color: inherit; /* don't allow the visited links to change color */
+    color: inherit;
+    /* don't allow the visited links to change color */
 }
 
 li {
-    list-style: none; /* no bullets for list items */
+    list-style: none;
+    /* no bullets for list items */
 }
 
 nav li:hover, .resume-link:hover, .copyright-link:hover {
@@ -45,7 +67,8 @@ nav li:hover, .resume-link:hover, .copyright-link:hover {
 }
 
 nav li {
-    cursor: pointer; /* makes the cursor change when hovering on a nav li item */
+    cursor: pointer;
+    /* makes the cursor change when hovering on a nav li item */
 }
 
 /* used only by the Contact component. After re-writing that, see if I still need this textarea {
@@ -56,6 +79,7 @@ nav li {
 } */
 
 /* used in Nav only - I need this for now, but once I convert Nav to use bootstrap, I might not need it */
+
 .flex-row {
     display: flex;
     flex-wrap: wrap;
@@ -68,14 +92,15 @@ nav li {
 .card-text {
     font-size: .75rem;
     padding-bottom: 0;
-    margin-bottom:10px ;
+    margin-bottom: 10px;
+    /* font-family: 'Bitter-Regular, sans-serif'; */
 }
 
 .proj-link, .footer-link {
     border: 1px solid white;
     border-radius: 50%;
     margin-right: 10px;
-    margin-top: 50px;   
+    margin-top: 50px;
     padding-bottom: 4px;
     padding-left: 4px;
     padding-right: 4px;
