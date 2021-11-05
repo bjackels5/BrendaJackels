@@ -7,21 +7,23 @@ main {
 :root {
     --hover-color: magenta;
     --active-color: cornflowerblue;
+    
     --primary: #8c54ff;
     --secondary: #F3A847;
-    --tertiary: #B12704;
+    /* --tertiary: #B12704; */
     --light: #fafafa;
     --dark: #000000;
     --darker: #111111;
-    --error: rgb(228, 46, 1);
-    --spacing-one: calc(1rem * 0.5);
-    --spacing-two: calc(1rem);
-    --spacing-five: calc(2.5rem);
+    /* --error: rgb(228, 46, 1); */
+    /* --spacing-one: calc(1rem * 0.5); */
+    /* --spacing-two: calc(1rem); */
+    /* --spacing-five: calc(2.5rem); */
+   
 }
 
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 html, body {
     min-height: 100%;
@@ -76,9 +78,7 @@ p {
 }
 
 a {
-    color: var(--tertiary);
     text-decoration: none;
-    font-weight: bold;
 }
 
 a:visited {
@@ -105,47 +105,15 @@ button {
     background-color: var(--secondary);
 }
 
-button:hover {
-    opacity: .8;
-}
-
-button[disabled] {
-    cursor: default;
-    opacity: .8;
-}
-
-img {
+.proj-img {
     max-width: 100%;
-}
-
-span[role="img"] {
-    cursor: default;
-}
-
-form {
-    width: 40%;
-}
-
-input {
-    font-size: 1rem;
-    padding: 0.25rem;
-    border: 1px solid var(--dark);
-    outline: none;
-    border-radius: 3px;
-    transition: box-shadow 0.2s;
-}
-
-input:focus {
-    border: 1px solid var(--secondary);
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
 li {
     list-style: none;
 }
 
-nav a:hover, nav li:hover {
-    text-decoration: none;
+nav a:hover, nav li:hover, .resume-link:hover, .copyright-link:hover {
     color: var(--hover-color);
 }
 
@@ -218,14 +186,15 @@ button {
     padding: 10px 15px;
 }
 
+/*
 a {
     border-radius: 5px;
-    color: var(--primary);
     font-weight: 600;
     padding: 2px 4px;
     margin-left: -2px;
     margin-right: -2px;
 }
+*/
 
 .navActive {
     color: var(--active-color);
@@ -263,12 +232,11 @@ a {
     padding-right: 4px;
 }
 
-.proj-link:hover {
+.proj-link:hover, .footer-link:hover {
     border: 2px solid var(--hover-color);
 }
 
 .project:hover {
-    /* border: 1px solid white; */
     padding: 2px;
 }
 
@@ -282,18 +250,10 @@ a {
     padding-right: 4px;
 }
 
-.footer-link:hover {
-    border: 2px solid var(--hover-color);
-}
-
-.copyright-link {
-    /* font-size: 3em; */
-}
-
-.copyright-link:hover {
-    color: var(--hover-color);
-}
-
 .copyright-info {
     font-size: .75em;
+}
+
+.resume-link {
+    color: white;
 }

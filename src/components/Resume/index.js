@@ -23,7 +23,7 @@ function Resume() {
                 <li>Ten</li>
             </ul>
 
-            You can <a href={PDF} rel='noreferrer' target="_blank" download>download my resume</a>.
+            You can <a className="resume-link" href={PDF} rel='noreferrer' target="_blank" download>download my resume</a>.
         </section>
     )
 }

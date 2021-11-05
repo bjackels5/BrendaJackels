@@ -20,7 +20,7 @@ function Footer() {
                 © 2021 Copyright:
                 <a  className="copyright-link"
                     href="https://bjackels5.github.io/bjackels5-portfolio/"
-                    target="_blank" rel="noreferrer">Brenda Jackels
+                    target="_blank" rel="noreferrer"> Brenda Jackels
                 </a>
             </div>
         </footer>
