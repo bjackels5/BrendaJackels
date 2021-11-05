@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import ContactForm from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 function App() {
     const menuIds = {
@@ -47,7 +48,7 @@ function App() {
                 ) : (currentSelection.id === menuIds.CONTACT) ? (
                     <ContactForm></ContactForm>
                 ) : (currentSelection.id === menuIds.RESUME) ? (
-                    "<Resume></Resume>"
+                    <Resume></Resume>
                 ) : "oops"}
             </main>
             <Footer></Footer>
