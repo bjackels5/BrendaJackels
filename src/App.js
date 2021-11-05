@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import About from './components/About';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
+import Portfolio from './components/Portfolio';
 
 function App() {
     const menuIds = {
@@ -41,7 +42,7 @@ function App() {
                 {(currentSelection.id === menuIds.ABOUTME) ? (
                     <About></About>
                 ) : (currentSelection.id === menuIds.PORTFOLIO) ? (
-                    "<Portfolio></Portfolio>"
+                    <Portfolio></Portfolio>
                 ) : (currentSelection.id === menuIds.CONTACT) ? (
                     <ContactForm></ContactForm>
                 ) : (currentSelection.id === menuIds.RESUME) ? (
