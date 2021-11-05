@@ -4,11 +4,13 @@ main {
     padding: 50px 30px;
 }
 
+/* put all the colors here so that I can easily see them together */
 :root {
     --hover-color: magenta;
     --active-color: cornflowerblue;
-    --light: #fafafa;
-    --dark: #000000;
+    --submit-button-color: cornflowerblue;
+    --text-color: #fafafa;
+    --the-bkgnd-color: #000000;
 }
 
 /* seems like I might want this back? Just in case, I'll keep it until I'm done with all styling. If 
@@ -42,8 +44,8 @@ html, body {
 }
 
 body {
-    background: var(--dark);
-    color: var(--light);
+    background: var(--the-bkgnd-color);
+    color: var(--text-color);
     font-family: 'Bitter-Regular, sans-serif';
 }
 
@@ -76,12 +78,13 @@ li {
     color: inherit; /* do not let links change color once visited */
 }
 
-/* used only by the Contact component. After re-writing that, see if I still need this textarea {
-    width: 600px;
-    height: 120px;
-    border: 3px solid #cccccc;
-    padding: 5px;
-} */
+textarea {
+    height: 10rem;
+    /* width: 600px; */
+    /* height: 10rem; */
+    /* border: 3px solid #cccccc; */
+    /* padding: 5px; */
+}
 
 .navbar .navActive {
     color: var(--active-color);
@@ -121,4 +124,8 @@ li {
 
 .resume-link {
     color: white;
+}
+
+#contact-form button {
+    background-color: var(--submit-button-color);
 }
