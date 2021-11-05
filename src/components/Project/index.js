@@ -16,7 +16,7 @@ function Project({ project }) {
             <p className="card-text">{project.description}</p>
             {/* to change the color of the icon, add color="thecolor" to the icon. <FaGithub color="magenta" />, e.g. */}
             <a className="proj-link" href={`${githubPath}${project.githubProject}`} target="_blank" rel="noreferrer"><FaGithub /></a>
-            <a className="proj-link float-right" href={`${project.appLink}`} target="_blank" rel="noreferrer"><FaPlayCircle /></a>
+            <a className="proj-link" href={`${project.appLink}`} target="_blank" rel="noreferrer"><FaPlayCircle /></a>
         </div>
     )
 }
