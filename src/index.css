@@ -93,10 +93,11 @@ textarea {
 
 .navbar .navActive {
     color: var(--active-color);
+    font-weight: 800;
 }
 
 .card-text {
-    font-size: .75rem;
+    font-size: 1rem;
     padding-bottom: 0;
     margin-bottom: 10px;
 }
@@ -151,10 +152,11 @@ textarea {
 .form-label {
     font-weight: 900;
 }
+
 .btn-custom {
     background-color: var(--submit-button-color);
     color: white;
-    opacity: 100%;
+    opacity: 60%;
     font-weight: 900;
 }
 
@@ -167,6 +169,5 @@ textarea {
     bottom: 0px;
     width: 100%;
     background-image: linear-gradient(to right, rgba(33,37,41,0), rgba(33,37,41, 1), rgba(33,37,41,0));
-    /* background-image: radial-gradient(rgba(33,37,41, 1) 30%, rgba(33,37,41,0)); */
 }
 

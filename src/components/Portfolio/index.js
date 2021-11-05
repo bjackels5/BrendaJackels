@@ -54,7 +54,7 @@ function Portfolio({ currentCategory }) {
 
     return (
         <container>
-            <div className="row mt-3">
+            <div className="row mt-4">
                 {projects.map((project) => (
                     <Project project={project}></Project>
                 ))}
