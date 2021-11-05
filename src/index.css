@@ -58,17 +58,22 @@ a:visited {
 }
 
 li {
-    list-style: none;
+    /* list-style: none; */
     /* no bullets for list items */
 }
 
-nav li:hover, .resume-link:hover, .copyright-link:hover {
+.navbar {
+    margin-left: 50px;
+}
+
+.navbar li:hover, .navbar-brand:hover, .resume-link:hover, .copyright-link:hover {
     color: var(--hover-color);
 }
 
-nav li {
-    cursor: pointer;
-    /* makes the cursor change when hovering on a nav li item */
+.navbar li, .navbar li:visited {
+    cursor: pointer;     /* makes the cursor change when hovering on a nav li item */
+    list-style: none; /* no bulets for list items */
+    color: inherit; /* do not let links change color once visited */
 }
 
 /* used only by the Contact component. After re-writing that, see if I still need this textarea {
@@ -78,14 +83,7 @@ nav li {
     padding: 5px;
 } */
 
-/* used in Nav only - I need this for now, but once I convert Nav to use bootstrap, I might not need it */
-
-.flex-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.navActive {
+.navbar .navActive {
     color: var(--active-color);
 }
 
@@ -93,7 +91,6 @@ nav li {
     font-size: .75rem;
     padding-bottom: 0;
     margin-bottom: 10px;
-    /* font-family: 'Bitter-Regular, sans-serif'; */
 }
 
 .proj-link, .footer-link {

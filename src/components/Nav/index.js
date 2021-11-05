@@ -2,11 +2,7 @@
 Nav Component
 */
 
-// import React, { useState } from 'react';
-// import React, { useEffect } from 'react';
 import React from 'react';
-// import { capitalizeFirstLetter } from "../../utils/helpers";
-
 
 function Nav(props) {
     const {
@@ -16,17 +12,15 @@ function Nav(props) {
     } = props;
 
     return (
-        <header className="flex-row px-1">
-            <h2 className="corben">
-                <a href="/">
-                    Brenda Jackels
-                </a>
-            </h2>
-            <nav>
-                <ul className="flex-row">
+        <nav className="navbar navbar-expand-lg ml-4">
+            <a className="navbar-brand corben mt-0 pt-0" href="/">Brenda Jackels</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse">
+                <div className="navbar-nav">
                     {menuSelections.map((menuSelection) => (
-                        <li className={`mx-2 ${currentSelection.name === menuSelection.name && 'navActive'
-                            }`} key={menuSelection.name} >
+                        <li className={`nav-item nav-link ${currentSelection.name === menuSelection.name && 'navActive'}`} key={menuSelection.name}>
                             <span onClick={() => {
                                 setCurrentSelection(menuSelection);
                             }}
@@ -35,9 +29,9 @@ function Nav(props) {
                             </span>
                         </li>
                     ))}
-                </ul>
-            </nav>
-        </header>
+                </div>
+            </div>
+        </nav>
     )
 }
 
