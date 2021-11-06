@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bjackels5-portfolio/static/css/main.5ab0e537.chunk.css",
+    "main.css": "/bjackels5-portfolio/static/css/main.008e7512.chunk.css",
     "main.js": "/bjackels5-portfolio/static/js/main.42306725.chunk.js",
     "main.js.map": "/bjackels5-portfolio/static/js/main.42306725.chunk.js.map",
     "runtime-main.js": "/bjackels5-portfolio/static/js/runtime-main.29bf4cdf.js",
@@ -10,7 +10,7 @@
     "static/js/3.cc074426.chunk.js": "/bjackels5-portfolio/static/js/3.cc074426.chunk.js",
     "static/js/3.cc074426.chunk.js.map": "/bjackels5-portfolio/static/js/3.cc074426.chunk.js.map",
     "index.html": "/bjackels5-portfolio/index.html",
-    "static/css/main.5ab0e537.chunk.css.map": "/bjackels5-portfolio/static/css/main.5ab0e537.chunk.css.map",
+    "static/css/main.008e7512.chunk.css.map": "/bjackels5-portfolio/static/css/main.008e7512.chunk.css.map",
     "static/js/2.be29f116.chunk.js.LICENSE.txt": "/bjackels5-portfolio/static/js/2.be29f116.chunk.js.LICENSE.txt",
     "static/media/index.css": "/bjackels5-portfolio/static/media/Corben-Regular.f63a6cf0.ttf",
     "static/media/Brenda-Jackels-portfolio-screenshot.png": "/bjackels5-portfolio/static/media/Brenda-Jackels-portfolio-screenshot.9e3e1ffa.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.29bf4cdf.js",
     "static/js/2.be29f116.chunk.js",
-    "static/css/main.5ab0e537.chunk.css",
+    "static/css/main.008e7512.chunk.css",
     "static/js/main.42306725.chunk.js"
   ]
 }
