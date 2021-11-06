@@ -1,13 +1,196 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+main {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 50px 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* put all the colors here so that I can easily see them together */
+:root {
+    --hover-color: magenta;
+    --active-color: cornflowerblue;
+    --submit-button-color: cornflowerblue;
+    --text-color: #fafafa;
+    --the-bkgnd-color: #000000;
+}
+
+
+@font-face {
+    font-family: "Corben-Regular, sans-serif";
+    src: local("Corben-Regular, sans-serif"), url("./assets/fonts/Corben/Corben-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bitter-Regular, serif";
+    src: local("Bitter-Regular, sans-serif"), url("./assets/fonts/Bitter/static/Bitter-Regular.ttf") format("truetype");
+}
+
+.corben {
+    font-family: 'Corben-Regular, sans-serif';
+}
+
+.bitter {
+    font-family: 'Bitter-Regular, sans-serif';
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    /* background: var(--the-bkgnd-color); */
+    color: var(--text-color);
+    font-family: 'Bitter-Regular, sans-serif';
+    background-image: url('./assets/images/greybrickbackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom left;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none; /* no underlines for links */
+}
+
+a:visited {
+    color: inherit;
+    /* don't allow the visited links to change color */
+}
+
+.navbar {
+    padding-left: 50px;
+}
+
+.navbar li:hover,
+.navbar-brand:hover,
+.resume-link:hover,
+.copyright-link:hover,
+.btn-custom:hover,
+.this-proj-both-links:hover .this-proj-desc-link {
+    color: var(--hover-color);
+}
+
+.navbar li, .navbar li:visited {
+    cursor: pointer;     /* makes the cursor change when hovering on a nav li item */
+    list-style: none; /* no bullets for list items */
+    color: inherit; /* do not let links change color once visited */
+}
+
+textarea {
+    height: 10rem;
+}
+
+.navbar .navActive {
+    color: var(--active-color);
+    font-weight: 800;
+}
+
+.card-text {
+    font-size: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.proj-link, .footer-link {
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 50px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.this-proj-link {
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: white;
+}
+
+.this-proj-desc {
+    font-size: 1.5rem;
+}
+
+.this-proj-desc-link {
+    color: white;
+}
+
+.proj-link:hover, .footer-link:hover, .this-proj-both-links:hover .this-proj-link {
+    border: 2px solid var(--hover-color);
+}
+
+.proj-img {
+    max-width: 100%;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    transition: transform .5s
+}
+
+.copyright-info {
+    font-size: .75em;
+}
+
+.resume-link {
+    color: white;
+}
+
+.container-extra { 
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+#contact-form {
+    width: 60%;
+    min-width: 360px;
+}
+
+.form-control {
+    opacity: 60%;
+    font-weight: 900;
+}
+
+.form-label {
+    font-weight: 900;
+}
+
+.btn-custom {
+    background-color: var(--submit-button-color);
+    color: white;
+    opacity: 60%;
+    font-weight: 900;
+}
+
+.bg-custom-nav {
+    background-image: linear-gradient(to right, rgba(33,37,41, 1), rgba(33,37,41,0));
+}
+
+.bg-custom-foot {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(33,37,41,0), rgba(33,37,41, 1), rgba(33,37,41,0));
+}
+
+.resume {
+    font-size: 1.5em;
+}
+
+.prof-title {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.prof-list {
+}
+
+.prof-item {
+    list-style: none; /* no bullets for list items */
+    font-size: 1.5em;
 }
