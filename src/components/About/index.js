@@ -8,7 +8,7 @@ import profilePic from "../../assets/images/Brenda2021.png";
 function About() {
     return (
         // <section className="my-5" id="about">
-        <div className="container mt-3">
+        <div className="container container-extra mt-3">
             <div className="row">
                 <div className="col-md-8 mt-5">
                     <h1>Meet Brenda Jackels</h1>
@@ -24,8 +24,8 @@ function About() {
                         <h2>How I got to where I am</h2>
                         <p>
                             I earned my Master's degree in Computer Science in 1990 and worked as a programmer for six years, primarily coding using C++. After much deliberation,
-                            I became a full-time homemaker and mom in 1996. In 2013 I was hired to work the front desk at a dental office, and I've enjoyed that
-                            position ever since.
+                            I became a full-time homemaker and mom in 1996. In 2013 I was hired to work the front desk at a dental office where I have streamlined operations 
+                            through a more effective use of commercial software resulting in increased efficiency while reducing the use of consumables.
                         </p>
                     </section>
                     <section class="hobbies">

@@ -9,7 +9,7 @@ import { FaGithub, FaStackOverflow, FaLinkedin } from 'react-icons/fa';
 function Footer() {
     return (
         <footer class="text-center text-white bg-custom-foot">
-            <div class="container pt-1">
+            <div class="container container-extra pt-1">
                 <section class="mb-1">
                     <a className="footer-link mx-2" href="https://github.com/bjackels5" target="_blank" rel="noreferrer"><FaGithub /></a>
                     <a className="footer-link mx-2" href="https://www.linkedin.com/in/brenda-jackels-105/" target="_blank" rel="noreferrer"><FaLinkedin /></a>

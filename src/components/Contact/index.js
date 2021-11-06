@@ -40,7 +40,7 @@ function ContactForm() {
     }
 
     return (
-        <section className="container py-4">
+        <section className="container container-extra py-4">
 
             {/* <!-- Bootstrap 5 starter form --> */}
             <form id="contact-form" onSubmit={handleSubmit}>

@@ -55,8 +55,7 @@ body {
 }
 
 a {
-    text-decoration: none;
-    /* no underlines for links */
+    text-decoration: none; /* no underlines for links */
 }
 
 a:visited {
@@ -132,14 +131,13 @@ textarea {
     color: white;
 }
 
-.container {
+.container-extra { 
     width: 100%;
     justify-content: center;
     display: flex;
 }
 
 #contact-form {
-    /* opacity: 60%; */
     width: 60%;
     min-width: 360px;
 }
@@ -171,3 +169,19 @@ textarea {
     background-image: linear-gradient(to right, rgba(33,37,41,0), rgba(33,37,41, 1), rgba(33,37,41,0));
 }
 
+.resume {
+    font-size: 1.5em;
+}
+
+.prof-title {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.prof-list {
+}
+
+.prof-item {
+    list-style: none; /* no bullets for list items */
+    font-size: 1.5em;
+}
