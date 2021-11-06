@@ -152,7 +152,7 @@ textarea {
 }
 
 .form-control {
-    opacity: 60%;
+    opacity: .6;
     font-weight: 900;
 }
 
@@ -163,7 +163,7 @@ textarea {
 .btn-custom {
     background-color: var(--submit-button-color);
     color: white;
-    opacity: 60%;
+    opacity: .6;
     font-weight: 900;
 }
 
