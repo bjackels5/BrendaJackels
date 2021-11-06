@@ -1,8 +1,7 @@
-# ProjectName
+# Portfolio Website
 This challenge for Module 20 of the Coding Bootcamp is to create a professional portfolio for myself using React.
 
-grey brick background
-https://www.wallpaperflare.com/wall-of-rocks-grey-brick-wall-artistic-urban-wall-building-feature-wallpaper-poyok
+* [Project URL](#projectURL)
 
 * [User Story](#userStory)
 
@@ -10,18 +9,20 @@ https://www.wallpaperflare.com/wall-of-rocks-grey-brick-wall-artistic-urban-wall
 
 * [Technologies Used](#techUsed)
 
+* [Credits](#credits)
+
 * [What I Learned](#whatILearned)
 
-* [ProjectName Screenshot](#webImage)
-
-* [Sample Generated Webpage](#sampleOutput)
-
-* [ProjectName Demo](#projectDemo)
-
-* [ProjectName URL](#projectURL)
+* [Screenshot](#webImage)
 
 * [Contact Me](#contactMe)
 
+
+---
+
+<a id="projectURL"></a>
+## Project URL
+[Project URL](https://bjackels5.github.io/bjackels5-portfolio/)
 
 ---
 
@@ -29,9 +30,9 @@ https://www.wallpaperflare.com/wall-of-rocks-grey-brick-wall-artistic-urban-wall
 
 ## User Story
 
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
+* AS AN employer looking for candidates with experience building single-page applications
+* I WANT to view a potential employee's deployed React portfolio of work samples
+* SO THAT I can assess whether they're a good candidate for an open position
 --- 
 
 <a id="requirements"></a>
@@ -82,65 +83,51 @@ SO THAT I can assess whether they're a good candidate for an open position
 ## Technologies Used
 
 * React
+* React Icons
+* Bootstrap
+* Node
+* Google Drive: used to host the resume for download so that I can update it without having to modify this project.
+* Google Fonts
+* HTML
+* CSS
+* Create-React-App
+* GitHub Pages
+* Photoshop Elements
+
+
+---
+
+<a id="credits"></a>
+
+## Credits
+
+* I found the background on 
+[wallpaperflare.com](https://www.wallpaperflare.com/wall-of-rocks-grey-brick-wall-artistic-urban-wall-building-feature-wallpaper-poyok).
+* Our TA, Mila, helped me with a bunch of styling on my Portfolio component, including getting the icon and text to both change on hover regardless of which one was actually hovered.
+
 --- 
 
 <a id="whatILearned"></a>
 ## What I Learned
 
-I learned that the instructions in the Module to disable automatic browser opening for the CRA CLI are incorrect. The correct way to suppress the browser is to add "BROWSER=none" to the .env file. There are other methods that involved more steps.
+* I learned that the instructions in the Module to disable automatic browser opening for the CRA CLI are incorrect. The correct way to suppress the browser is to add "BROWSER=none" to the .env file. There are other methods that involved more steps.
 
-Build a single-page application with React.
-
-Create reusable components within a React application.
-
-Manage state within React components.
-
-Pass props to child components.
-
-Use React Hooks to manage state in functional components.
-
-Conditionally render components based on updates to state.
-
-Compose a React application with components.
-
-Learn how React components are basically just functions.
-
-Construct the elements of a webpage using JSX.
-
-Debug errors in React.
-
+* How to build a single-page application with React.
+* How to create reusable components within a React application.
+* How to manage state within React components.
+* How to pass props to child components.
+* Ho to use React Hooks to manage state in functional components.
+* How to conditionally render components based on updates to state.
+* How to Construct the elements of a webpage using JSX.
+* How to debug errors in React.
 
 ---
 
 <a id="webImage"></a>
 
-## ProjectName Screenshot
+## Project Screenshot
 
-![ProjectName](./media/project-name.png)
-
----
-
-<a id="sampleOutput"></a>
-
-<a href="./dist/sampleOutputFile">Sample ProjectName Output</a>
-
----
-
-## ProjectName Demo
-
-<a id="projectDemo"></a>
-
-<a href="https://youtu.be/TRyEJ-cYpcg">
-   <img src="./media/ProjectName-demo.png">
-</a>
-
----
-
-<a id="projectURL"></a>
-## ProjectName URL
-[ProjectName URL](https://bjackels5.github.io/bjackels5-portfolio/)
-
----
+![Portfolio](./src/assets/images/Brenda-Jackels-portfolio-screenshot.png)
 
 ---
 
