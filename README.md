@@ -104,6 +104,7 @@ This challenge for Module 20 of the Coding Bootcamp is to create a professional 
 * I found the background on 
 [wallpaperflare.com](https://www.wallpaperflare.com/wall-of-rocks-grey-brick-wall-artistic-urban-wall-building-feature-wallpaper-poyok).
 * Our TA, Mila, helped me with a bunch of styling on my Portfolio component, including getting the icon and text to both change on hover regardless of which one was actually hovered.
+* I used https://favicon.io/favicon-converter/ to convert an image to a favicon.
 
 --- 
 
