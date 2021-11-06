@@ -72,7 +72,12 @@ li {
     padding-left: 50px;
 }
 
-.navbar li:hover, .navbar-brand:hover, .resume-link:hover, .copyright-link:hover, .btn-custom:hover {
+.navbar li:hover,
+.navbar-brand:hover,
+.resume-link:hover,
+.copyright-link:hover,
+.btn-custom:hover,
+.this-proj-both-links:hover .this-proj-desc-link {
     color: var(--hover-color);
 }
 
@@ -111,7 +116,21 @@ textarea {
     padding-right: 4px;
 }
 
-.proj-link:hover, .footer-link:hover {
+.this-proj-link {
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.this-proj-desc {
+    font-size: 1.5rem;
+}
+
+.proj-link:hover, .footer-link:hover, .this-proj-both-links:hover .this-proj-link {
     border: 2px solid var(--hover-color);
 }
 
@@ -120,7 +139,8 @@ textarea {
 }
 
 .project:hover {
-    padding: 2px;
+    transform: scale(1.1);
+    transition: transform .5s
 }
 
 .copyright-info {

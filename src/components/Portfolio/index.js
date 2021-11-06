@@ -2,6 +2,9 @@
 Portfolio Component
 */
 
+import { FaGithub } from 'react-icons/fa';
+
+
 
 import React, { useState } from 'react';
 import Project from '../Project';
@@ -54,6 +57,24 @@ function Portfolio({ currentCategory }) {
 
     return (
         <container>
+            <div className="row mt-4">
+                <div className="col-12">
+                    <p className="this-proj-desc">The project for this website has a
+                        <span className="this-proj-both-links">
+                            <a  href="https://github.com/bjackels5/bjackels5-portfolio" target="_blank" rel="noreferrer"
+                            >
+                                <span className="this-proj-link">
+                                    <FaGithub />
+                                </span>
+                                <span className="this-proj-desc-link">
+                                     GitHub repository
+                                </span>
+                                 .
+                            </a>
+                        </span>
+                    </p>
+                </div>
+            </div>
             <div className="row mt-4">
                 {projects.map((project) => (
                     <Project project={project}></Project>
