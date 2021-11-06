@@ -13,13 +13,6 @@ main {
     --the-bkgnd-color: #000000;
 }
 
-/* seems like I might want this back? Just in case, I'll keep it until I'm done with all styling. If 
-   it's still commented out when I'm done, I'll delete it then. */
-
-/*
-* {
-    box-sizing: border-box;
-} */
 
 @font-face {
     font-family: "Corben-Regular, sans-serif";
@@ -63,11 +56,6 @@ a:visited {
     /* don't allow the visited links to change color */
 }
 
-li {
-    /* list-style: none; */
-    /* no bullets for list items */
-}
-
 .navbar {
     padding-left: 50px;
 }
@@ -83,16 +71,12 @@ li {
 
 .navbar li, .navbar li:visited {
     cursor: pointer;     /* makes the cursor change when hovering on a nav li item */
-    list-style: none; /* no bulets for list items */
+    list-style: none; /* no bullets for list items */
     color: inherit; /* do not let links change color once visited */
 }
 
 textarea {
     height: 10rem;
-    /* width: 600px; */
-    /* height: 10rem; */
-    /* border: 3px solid #cccccc; */
-    /* padding: 5px; */
 }
 
 .navbar .navActive {
@@ -107,7 +91,7 @@ textarea {
 }
 
 .proj-link, .footer-link {
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     margin-right: 10px;
     margin-top: 50px;
@@ -117,17 +101,22 @@ textarea {
 }
 
 .this-proj-link {
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     margin-left: 5px;
     margin-right: 5px;
     padding-bottom: 4px;
     padding-left: 4px;
     padding-right: 4px;
+    color: white;
 }
 
 .this-proj-desc {
     font-size: 1.5rem;
+}
+
+.this-proj-desc-link {
+    color: white;
 }
 
 .proj-link:hover, .footer-link:hover, .this-proj-both-links:hover .this-proj-link {

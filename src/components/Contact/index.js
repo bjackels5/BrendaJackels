@@ -3,6 +3,9 @@ ContactForm Component
 */
 
 import React, { useState } from 'react';
+import { BiMailSend } from "react-icons/bi";
+import { FaLinkedin } from 'react-icons/fa';
+
 
 function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -73,6 +76,37 @@ function ContactForm() {
                 <div class="d-grid">
                     <button className="btn btn-large btn-custom" type="submit">Submit</button>
                 </div>
+                <p>The above form is not yet functional. To reach me in the meantime, please reach out to me at
+                    <span className="this-proj-both-links">
+                        <a href="https://www.linkedin.com/in/brenda-jackels-105/" target="_blank" rel="noreferrer"
+                        >
+                            <span className="this-proj-link">
+                                <FaLinkedin />
+                            </span>
+                            <span className="this-proj-desc-link">
+                                Linked In
+                            </span>
+                        </a>
+                    </span>
+                    &nbsp;or&nbsp;
+                    <span className="this-proj-both-links">
+                        <a href="mailto: bjackels5@gmail.com" target="_blank" rel="noreferrer"
+                        >
+                            <span className="this-proj-link">
+                                <BiMailSend />
+                            </span>
+                            <span className="this-proj-desc-link">
+                                email
+                            </span>
+                        </a>
+                    </span>
+                    .
+                </p>
+
+
+
+
+
             </form>
         </section>
     )
