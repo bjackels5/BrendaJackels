@@ -51,9 +51,12 @@ a {
     text-decoration: none; /* no underlines for links */
 }
 
+*:visited {
+    color: inherit; /* don't allow the visited links to change color */
+}
+
 a:visited {
-    color: inherit;
-    /* don't allow the visited links to change color */
+    color: inherit; /* don't allow the visited links to change color */
 }
 
 .navbar {
@@ -65,7 +68,7 @@ a:visited {
 .resume-link:hover,
 .copyright-link:hover,
 .btn-custom:hover,
-.this-proj-both-links:hover .this-proj-desc-link {
+.two-links:hover .desc-link {
     color: var(--hover-color);
 }
 
@@ -100,7 +103,7 @@ textarea {
     padding-right: 4px;
 }
 
-.this-proj-link {
+.icon-link {
     border: 2px solid white;
     border-radius: 50%;
     margin-left: 5px;
@@ -115,11 +118,13 @@ textarea {
     font-size: 1.5rem;
 }
 
-.this-proj-desc-link {
+.desc-link {
     color: white;
 }
 
-.proj-link:hover, .footer-link:hover, .this-proj-both-links:hover .this-proj-link {
+.proj-link:hover,
+.footer-link:hover,
+.two-links:hover .icon-link {
     border: 2px solid var(--hover-color);
 }
 
@@ -149,6 +154,10 @@ textarea {
 #contact-form {
     width: 60%;
     min-width: 360px;
+}
+
+.contact-direct {
+    font-weight: 900;
 }
 
 .form-control {

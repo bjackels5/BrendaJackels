@@ -2,12 +2,10 @@
 Portfolio Component
 */
 
-import { FaGithub } from 'react-icons/fa';
-
-
-
+// import { FaGithub } from 'react-icons/fa';
 import React, { useState } from 'react';
 import Project from '../Project';
+import IconTextLink from '../IconTextLink';
 
 function Portfolio({ currentCategory }) {
     const [projects] = useState([
@@ -60,18 +58,8 @@ function Portfolio({ currentCategory }) {
             <div className="row mt-4">
                 <div className="col-12">
                     <p className="this-proj-desc">The project for this website has a
-                        <span className="this-proj-both-links">
-                            <a  href="https://github.com/bjackels5/bjackels5-portfolio" target="_blank" rel="noreferrer"
-                            >
-                                <span className="this-proj-link">
-                                    <FaGithub />
-                                </span>
-                                <span className="this-proj-desc-link">
-                                     GitHub repository
-                                </span>
-                                 .
-                            </a>
-                        </span>
+                        <IconTextLink hrefLink="https://github.com/bjackels5/bjackels5-portfolio" iconName="FaGithub" descText="GitHub repository" />
+                        .
                     </p>
                 </div>
             </div>
