@@ -23,9 +23,9 @@ function About() {
                     <section class="my-past">
                         <h2>How I got to where I am</h2>
                         <p>
-                            I earned my Master's degree in Computer Science in 1990 and worked as a programmer for six years, primarily coding using C++. After much deliberation,
-                            I became a full-time homemaker and mom in 1996. In 2013 I was hired to work the front desk at a dental office where I have streamlined operations 
-                            through a more effective use of commercial software resulting in increased efficiency while reducing the use of consumables.
+                            I earned my Master's degree in Computer Science in 1990 and worked as a programmer using C++. After much deliberation,
+                            I became a full-time homemaker and mom. I was then hired to work the front desk at a dental office where I quickly became
+                            our in-house IT department. While there, I have streamlined operations through a more effective use of commercial software resulting in increased efficiency.
                         </p>
                     </section>
                     <section class="hobbies">
