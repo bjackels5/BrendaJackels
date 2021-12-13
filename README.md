@@ -21,8 +21,8 @@ This challenge for Module 20 of the Coding Bootcamp is to create a professional 
 ---
 
 <a id="projectURL"></a>
-## Project URL
-[Project URL](https://bjackels5.github.io/bjackels5-portfolio/)
+## My Portfolio URL
+[My Portfolio URL](https://bjackels5.github.io/BrendaJackels/)
 
 ---
 
