@@ -205,3 +205,7 @@ textarea {
     list-style: none; /* no bullets for list items */
     font-size: 1.5em;
 }
+
+.navbar-toggler-icon {
+    color: white;
+}
