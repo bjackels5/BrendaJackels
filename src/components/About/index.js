@@ -24,7 +24,7 @@ function About() {
                         </p>
                         <p>
                         My recently earned Full Stack Developer Certificate from University of Central Florida's coding bootcamp added to my skills, including CSS,
-                        HTML, SQL, and MongoDB.
+                        HTML, SQL, and the MERN stack (MongoDB, Express, React, Node).
                         </p>
                         <p>
                         I have a love of learning as well as a flexible and skillful programmer mindset. I believe my enthusiasm for work combined with my relevant educational and professional credentials will help me contribute meaningfully.
