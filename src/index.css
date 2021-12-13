@@ -88,9 +88,9 @@ textarea {
 }
 
 .card-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-bottom: 0;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .proj-link, .footer-link {
@@ -101,6 +101,7 @@ textarea {
     padding-bottom: 4px;
     padding-left: 4px;
     padding-right: 4px;
+    color: white;
 }
 
 .icon-link {
@@ -196,8 +197,9 @@ textarea {
     text-decoration: underline;
 }
 
-.prof-list {
-}
+/* use prof-list if I want to set some consistent styling for the proficiency lists */
+/* .prof-list {
+} */
 
 .prof-item {
     list-style: none; /* no bullets for list items */

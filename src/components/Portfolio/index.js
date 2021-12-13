@@ -11,10 +11,12 @@ function Portfolio({ currentCategory }) {
     const [projects] = useState([
         {
             name: 'Campfire',
-            description: 'Campfire is a communication app for Coding Bootcamp attendees. Campfire was created to serve as the go to social media of a Coding Bootcamp student. In this application, old and new students will have the opportunity to bond and network with one another in a more direct way than they do during classes or through Slack. ',
+            description: 'Campfire was created to serve as the go to social media of a Coding Bootcamp student.',
+            technology: 'Express, Node, Sequelize, Handlebars, Socket.IO, bcrypt',
             githubProject: 'https://github.com/bjackels5/Campfire',
             appLink: 'https://campfire-social-media.herokuapp.com/',
             image: 'Campfire.jpg',
+            role: 'Backend design and development',
             id: 1
         },
         // {
@@ -26,41 +28,51 @@ function Portfolio({ currentCategory }) {
         // },
         {
             name: 'Note Taker',
-            description: 'Note Taker allows the user to create and delete notes, each with a title and text. Creating this app exposed me to Express, Heroku, Bootswatch, Insomnia Core, and FontAwesome.',
+            description: 'Note Taker allows the user to create and delete notes, each with a title and text.',
+            technology: 'Express, Heroku, Bootswatch, Insomnia Core, FontAwesome',
             githubProject: 'https://github.com/bjackels5/note-taker',
             appLink: 'https://note-taker-bjackels5.herokuapp.com/',
             image: 'note-taker.png',
+            role: 'Sole author',
             id: 2
         },
         {
             name: 'Budget Tracker',
-            description: 'The challenge for Module 19 of the Coding Bootcamp was to update an existing Budget Tracker application to allow for offline access and functionality.',
+            description: 'Refactor an existing Budget Tracker application to allow for offline access and functionality.',
+            technology: 'MongoDB, Mongoose, Heroku, IndexedDB, Node, Service Workers',
             githubProject: 'budget-tracker',
             appLink: 'https://budget-tracker-bjackels5.herokuapp.com/',
+            role: 'Sole author',
             image: 'budget-tracker.png',
             id: 3
         },
         {
             name: 'Team Webpage Generator',
-            description: 'The challenge for Module 10 of the Coding Bootcamp was to create a command line interface application that prompts a user for team information and then uses that information to create a webpage containing that information.',
+            description: 'A command line interface application that prompts a user for team information and then uses that information to create a webpage containing that information.',
+            technology: 'Jest, Bootstrap, Node, Inquirer, JavaScript, HTML, Built-in file system functionality',
             githubProject: 'https://github.com/bjackels5/team-webpage-generator',
             appLink: 'https://youtu.be/D_Ti1YEc5i4',
+            role: 'Sole author',
             image: 'team-webpage-generator-results.jpg',
             id: 4
         },
         {
             name: 'Weather Dashboard',
-            description: 'This challenge for Module 6 of the Coding Bootcamp is to create an app from scratch that allows a user to see weather data for multiple cities.',
+            description: 'An app that allows a user to see weather data for multiple cities.',
+            technology: 'OpenWeather API, JSON, dynamic HTML creation, Bootstrap',
             githubProject: 'https://github.com/bjackels5/weather-dashboard',
             appLink: 'https://bjackels5.github.io/weather-dashboard/',
+            role: 'Sole author',
             image: 'weather-dashboard.png',
             id: 5
         },
         {
             name: 'Moving Picture Potions',
+            technology: 'IMDb API, TheCocktailDB, Foundation, HTML, CSS, JavaScript',
             description: 'Moving Picture Potions allows the user to view random movie selections and adult beverages based on their choice of a movie genre.',
             githubProject: 'https://github.com/bjackels5/moving-picture-potions',
             appLink: 'https://bjackels5.github.io/moving-picture-potions/',
+            role: 'Backend design and development',
             image: 'moving-picture-potions.jpg',
             id: 6
         },
